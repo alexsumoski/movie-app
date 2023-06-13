@@ -11,6 +11,14 @@ class SplashPage extends StatefulWidget {
 
 class _SplashPageState extends State<SplashPage> {
   @override
+  void initState() {
+    super.initState();
+    widget.onInitializationComplete();
+  }
+
+  Future<void> _setup(BuildContext _context) async {}
+
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flickd',
